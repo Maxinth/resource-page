@@ -2,6 +2,7 @@ import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import App from "./App.tsx";
 import { Provider } from "@/components/ui/provider";
+import { ColorModeProvider } from "./components/ui/color-mode.tsx";
 import {
   createSystem,
   defaultConfig,
@@ -27,9 +28,11 @@ createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <ChakraProvider value={theme}>
       <Provider>
-        <Theme appearance="light">
-          <App />
-        </Theme>
+        <ColorModeProvider forcedTheme="light">
+          <Theme appearance="light">
+            <App />
+          </Theme>
+        </ColorModeProvider>
       </Provider>
     </ChakraProvider>
   </StrictMode>

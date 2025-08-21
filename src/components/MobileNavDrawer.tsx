@@ -11,7 +11,7 @@ const MobileNavDrawer = ({ isOpen, setIsOpen }: Props) => {
         <Portal>
           <Drawer.Backdrop />
           <Drawer.Positioner>
-            <Drawer.Content>
+            <Drawer.Content bgColor="white">
               <Drawer.Header>
                 <Drawer.Title></Drawer.Title>
               </Drawer.Header>
@@ -30,7 +30,6 @@ const MobileNavDrawer = ({ isOpen, setIsOpen }: Props) => {
                       paddingY="16px"
                       paddingX="12px"
                       textDecoration={"none"}
-                      borderBottom="4px solid white"
                       fontFamily={"Poppins"}
                       fontSize={"sm"}
                       fontWeight={"bold"}
@@ -44,7 +43,7 @@ const MobileNavDrawer = ({ isOpen, setIsOpen }: Props) => {
               </Drawer.Body>
 
               <Drawer.CloseTrigger asChild>
-                <CloseButton size="xl" />
+                <CloseButton size="xl" color="black" />
               </Drawer.CloseTrigger>
             </Drawer.Content>
           </Drawer.Positioner>
