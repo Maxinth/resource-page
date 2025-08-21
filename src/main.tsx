@@ -7,6 +7,7 @@ import {
   defaultConfig,
   defineConfig,
   ChakraProvider,
+  Theme,
 } from "@chakra-ui/react";
 
 const customConfig = defineConfig({
@@ -26,7 +27,9 @@ createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <ChakraProvider value={theme}>
       <Provider>
-        <App />
+        <Theme appearance="light">
+          <App />
+        </Theme>
       </Provider>
     </ChakraProvider>
   </StrictMode>
