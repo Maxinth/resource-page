@@ -1,6 +1,6 @@
 # st-14 Resources page
 
-A modern, responsive web application built with **React** and **Chakra UI**, a mobile-friendly drawer, and a searchable resources section.
+A modern, responsive web application built with **React** , **Typescript** and **Chakra UI**, a mobile-friendly drawer, and a searchable resources section.
 
 ---
 
