@@ -9,6 +9,7 @@ const NavSwitch = () => {
         fontFamily={"Poppins"}
         fontSize="sm"
         fontWeight={"semibold"}
+        display={{ base: "none", lg: "block" }}
       >
         Switch to Employee
       </Switch.Label>

@@ -5,7 +5,9 @@ const ResourcesSection = () => {
     <Flex
       as="section"
       bgColor="#FAFAFA"
-      padding="95px"
+      paddingX={{ base: "38px", lg: "95px" }}
+      paddingY={{ base: "68px", lg: "66px" }}
+      paddingTop={{ base: "68px", lg: "98px" }}
       flexDirection={"column"}
       alignItems="center"
       justifyContent={"center"}
@@ -13,14 +15,18 @@ const ResourcesSection = () => {
       <Heading
         as="h1"
         fontFamily={"Poppins"}
-        fontSize={"52px"}
+        fontSize={{ base: "40px", lg: "52px" }}
         lineHeight={"62px"}
         fontWeight={"bold"}
         marginBottom="23px"
       >
         Resources
       </Heading>
-      <Text textAlign={"center"} fontFamily={"Inter"}>
+      <Text
+        textAlign={"center"}
+        fontFamily={"Inter"}
+        fontSize={{ base: "18px", lg: "1rem" }}
+      >
         Consectetur adipiscing elit duis tristique sollicitudin nibh sit amet
         commodo <br /> nulla facilisi nullam vehicula ipsum a arcu cursus vitae
         congue
@@ -30,7 +36,7 @@ const ResourcesSection = () => {
         borderRadius={"10px"}
         marginTop="51px"
         paddingY={"4px"}
-        paddingX="30px"
+        paddingX={{ base: "16px", lg: "30px" }}
         border="1px solid #A1A1A1"
         width="100%"
         maxW={"853px"}

@@ -18,7 +18,13 @@ export default function CheckboxList({
   const { toggle, isChecked } = useCheckboxes(data);
 
   return (
-    <Flex direction="column" gap={4} fontFamily={"Inter"} marginBottom="33px">
+    <Flex
+      direction="column"
+      gap={4}
+      fontFamily={"Inter"}
+      marginBottom="33px"
+      width="100%"
+    >
       <Text fontWeight={"bold"} marginBottom={"8px"}>
         {heading}
       </Text>

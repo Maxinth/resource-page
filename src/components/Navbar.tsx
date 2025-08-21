@@ -9,7 +9,8 @@ const Navbar = () => {
     <Flex
       as="nav"
       paddingTop="16px"
-      paddingX="70px"
+      // paddingX="70px"
+      paddingX={{ base: "18px", md: "70px" }}
       border="1px solid #ECECEC"
       shadow={"sm"}
       alignItems={"center"}
@@ -29,6 +30,7 @@ const Navbar = () => {
           justifyContent={"center"}
           gap={4}
           marginLeft="40px"
+          display={{ base: "none", lg: "flex" }}
         >
           {navLinks?.map((item, index) => (
             <Link
@@ -52,7 +54,12 @@ const Navbar = () => {
       </Flex>
       <Flex pos={"relative"} top="-6px">
         <NavSwitch />
-        <Image src={divider} alt="divider" marginX={"28px"} scale={0.5} />
+        <Image
+          src={divider}
+          alt="divider"
+          marginX={{ base: "10px", lg: "28px" }}
+          scale={0.5}
+        />
         <NavAvatar />
       </Flex>
     </Flex>

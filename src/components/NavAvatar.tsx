@@ -1,5 +1,6 @@
-import { Avatar, HStack, Image, Flex, Text } from "@chakra-ui/react";
+import { Avatar, HStack, Image, Flex, Text, Box } from "@chakra-ui/react";
 import dropArrow from "@/assets/drop-arrow.svg";
+import hamburgerIcon from "@/assets/hamburger.svg";
 const NavAvatar = () => {
   return (
     <Flex alignItems={"center"} fontWeight={"bold"} fontFamily={"Poppins"}>
@@ -18,10 +19,20 @@ const NavAvatar = () => {
           />
         </Avatar.Root>
       </HStack>
-      <Text marginLeft={"4.5px"} marginRight={"7px"} fontWeight={"semibold"}>
-        Jonathan
-      </Text>
-      <Image src={dropArrow} alt="drop-arrow" cursor={"pointer"} />
+
+      <Box display={{ base: "none", lg: "flex" }}>
+        <Text marginLeft={"4.5px"} marginRight={"7px"} fontWeight={"semibold"}>
+          Jonathan
+        </Text>
+        <Image src={dropArrow} alt="drop-arrow" cursor={"pointer"} />
+      </Box>
+      <Image
+        src={hamburgerIcon}
+        alt="hamburger"
+        cursor={"pointer"}
+        marginLeft={6}
+        display={{ base: "block", lg: "none" }}
+      />
     </Flex>
   );
 };
