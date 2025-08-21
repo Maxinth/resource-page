@@ -45,4 +45,26 @@ const cardsData: Card[] = [
   },
 ];
 
-export { navLinks, cardsData };
+const keyFoundationalPrinciples = [
+  { id: "secureBase", label: "Secure Base" },
+  { id: "senseAppreciation", label: "Sense of Appreciation" },
+  { id: "learningOrg", label: "Learning Organisation" },
+  { id: "missionVision", label: "Mission and Vision" },
+  { id: "wellbeing", label: "Wellbeing" },
+];
+
+const docType = [
+  { id: "doc", label: "DOC" },
+  { id: "link", label: "Link" },
+  { id: "pdf", label: "PDF" },
+  { id: "video", label: "Video" },
+];
+const categories = [
+  { id: "sample-1", label: "Sample" },
+  { id: "sample-2", label: "Sample" },
+  { id: "sample-3", label: "Sample" },
+  { id: "sample-4", label: "Sample" },
+  { id: "sample-5", label: "Sample" },
+];
+
+export { navLinks, cardsData, keyFoundationalPrinciples, docType, categories };
