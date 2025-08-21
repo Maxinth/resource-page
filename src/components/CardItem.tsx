@@ -19,7 +19,14 @@ const CardItem = ({ text, icon, img, category }: Card) => {
       _hover={{ cursor: "pointer", scale: "1.05" }}
       transition={"all ease-in-out 90ms"}
     >
-      <Image src={icon} alt="icon" w="33px" h="33px" objectFit={"contain"} />
+      <Image
+        src={icon}
+        alt="icon"
+        w="33px"
+        h="33px"
+        objectFit={"contain"}
+        role="img"
+      />
       <Text
         fontFamily={"Poppins"}
         fontWeight={"bold"}
