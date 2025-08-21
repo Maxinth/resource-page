@@ -1,10 +1,11 @@
 import "./App.css";
 import Navbar from "./components/Navbar";
+import { Box } from "@chakra-ui/react";
 function App() {
   return (
-    <main>
+    <Box as="main" width={"100%"}>
       <Navbar />
-    </main>
+    </Box>
   );
 }
 
