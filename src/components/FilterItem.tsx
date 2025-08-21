@@ -2,31 +2,36 @@ import { Box, Flex, Text, Image } from "@chakra-ui/react";
 import { useCheckboxes } from "./hooks/useCheckBox";
 import checkBoxInit from "@/assets/check-box-init.svg";
 import checkBoxChecked from "@/assets/check-box-checked.svg";
-const items = [
-  { id: "secureBase", label: "Secure Base" },
-  { id: "senseAppreciation", label: "Sense of Appreciation" },
-  { id: "learningOrg", label: "Learning Organisation" },
-  { id: "missionVision", label: "Mission and Vision" },
-  { id: "wellbeing", label: "Wellbeing" },
-];
 
-export default function CheckboxList() {
-  const { toggle, isChecked } = useCheckboxes(items);
+type CheckBoxItem = {
+  id: string;
+  label: string;
+};
+
+export default function CheckboxList({
+  data,
+  heading,
+}: {
+  data: CheckBoxItem[];
+  heading: string;
+}) {
+  const { toggle, isChecked } = useCheckboxes(data);
 
   return (
-    <Flex direction="column" gap={4} fontFamily={"Inter"}>
-      <Text fontWeight={"bold"} marginBottom={"16px"}>
-        Key Foundational Principles{" "}
+    <Flex direction="column" gap={4} fontFamily={"Inter"} marginBottom="33px">
+      <Text fontWeight={"bold"} marginBottom={"8px"}>
+        {heading}
       </Text>
 
       <Box>
-        {items.map((item) => (
+        {data?.map((item) => (
           <Flex
             key={item.id}
             align="center"
             gap={3}
             cursor="pointer"
             onClick={() => toggle(item.id)}
+            marginBottom="2px"
           >
             <Image
               src={isChecked(item.id) ? checkBoxChecked : checkBoxInit}
