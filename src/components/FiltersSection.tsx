@@ -47,7 +47,8 @@ const FiltersSection = () => {
           <Box
             pos="relative"
             marginTop={{ base: "1rem", md: "0rem" }}
-            paddingX="2rem"
+            paddingX={{ base: "2rem", lg: "0rem" }}
+            paddingRight={{ base: "2rem" }}
           >
             <FilterItem
               data={keyFoundationalPrinciples}

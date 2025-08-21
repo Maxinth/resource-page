@@ -46,7 +46,13 @@ export default function CheckboxList({
               w="16.5px"
               h="16.5px"
             />
-            <Text fontFamily={"Inter"}>{item.label}</Text>
+            <Text
+              fontFamily={"Inter"}
+              _hover={{ color: "#314EF9" }}
+              transition={"all .2s ease-in-out"}
+            >
+              {item.label}
+            </Text>
           </Flex>
         ))}
       </Box>
