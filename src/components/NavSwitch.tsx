@@ -2,7 +2,7 @@ import { Switch } from "@chakra-ui/react";
 
 const NavSwitch = () => {
   return (
-    <Switch.Root>
+    <Switch.Root test-id="nav-switch">
       <Switch.HiddenInput />
       <Switch.Control bgColor={"#314EF9"} />
       <Switch.Label

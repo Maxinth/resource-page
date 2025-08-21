@@ -46,6 +46,7 @@ const ResourcesSection = () => {
       >
         <Image src={searchIcon} alt="search-icon" objectFit={"contain"} />
         <Input
+          type="text"
           placeholder="Search by title or keyword"
           _placeholder={{ fontFamily: "Inter", color: "#4F4F4F" }}
           outline={"none"}

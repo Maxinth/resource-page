@@ -6,7 +6,7 @@ interface Props {
 }
 const MobileNavDrawer = ({ isOpen, setIsOpen }: Props) => {
   return (
-    <Box display={{ base: "block", lg: "none" }}>
+    <Box display={{ base: "block", lg: "none" }} test-id="mobile-drawer">
       <Drawer.Root open={isOpen} onOpenChange={(e) => setIsOpen(e.open)}>
         <Portal>
           <Drawer.Backdrop />
@@ -24,6 +24,7 @@ const MobileNavDrawer = ({ isOpen, setIsOpen }: Props) => {
                 >
                   {navLinks?.map((item) => (
                     <Link
+                      href="#"
                       key={item}
                       _hover={{ bgColor: "#d3d7ee", color: "#314EF9" }}
                       paddingY="16px"

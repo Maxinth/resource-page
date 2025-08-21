@@ -8,7 +8,12 @@ interface Props {
 }
 const NavAvatar = ({ toggleDrawer }: Props) => {
   return (
-    <Flex alignItems={"center"} fontWeight={"bold"} fontFamily={"Poppins"}>
+    <Flex
+      alignItems={"center"}
+      fontWeight={"bold"}
+      fontFamily={"Poppins"}
+      test-id="nav-avatar"
+    >
       <HStack gap="3">
         <Avatar.Root
           key={"solid"}

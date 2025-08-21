@@ -14,7 +14,6 @@ const Navbar = () => {
       <Flex
         as="nav"
         paddingTop="16px"
-        // paddingX="70px"
         paddingX={{ base: "18px", md: "70px" }}
         border="1px solid #ECECEC"
         shadow={"sm"}
