@@ -5,7 +5,7 @@ import filterIcon from "@/assets/filter-icon.svg";
 import { useState } from "react";
 
 const FiltersSection = () => {
-  const [showFilter, setShowFilter] = useState(false);
+  const [showFilter, setShowFilter] = useState(true);
   return (
     <>
       <Box
